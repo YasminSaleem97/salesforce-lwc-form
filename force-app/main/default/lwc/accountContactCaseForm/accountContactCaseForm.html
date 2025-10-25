@@ -1,0 +1,31 @@
+<template>
+    <lightning-card title="Create Account, Contact & Case">
+        <div class="slds-p-around_medium">
+
+            <!-- Account Section -->
+            <h3 class="slds-text-heading_small">Account Details</h3>
+            <lightning-input label="Account Name" data-obj="account" name="Name" onchange={handleChange}></lightning-input>
+            <lightning-input label="Industry" data-obj="account" name="Industry" onchange={handleChange}></lightning-input>
+
+            <hr/>
+
+            <!-- Contact Section -->
+            <h3 class="slds-text-heading_small">Contact Details</h3>
+            <lightning-input label="First Name" data-obj="contact" name="FirstName" onchange={handleChange}></lightning-input>
+            <lightning-input label="Last Name" data-obj="contact" name="LastName" onchange={handleChange}></lightning-input>
+            <lightning-input label="Email" data-obj="contact" name="Email" onchange={handleChange}></lightning-input>
+
+            <hr/>
+
+            <!-- Case Section -->
+            <h3 class="slds-text-heading_small">Case Details</h3>
+            <lightning-input label="Subject" data-obj="case" name="Subject" onchange={handleChange}></lightning-input>
+            <lightning-input label="Status" data-obj="case" name="Status" onchange={handleChange}></lightning-input>
+            <lightning-input label="Priority" data-obj="case" name="Priority" onchange={handleChange}></lightning-input>
+
+            <div class="slds-m-top_medium">
+                <lightning-button variant="brand" label="Submit" onclick={handleSubmit}></lightning-button>
+            </div>
+        </div>
+    </lightning-card>
+</template>
