@@ -36,3 +36,20 @@ salesforce-lwc-form/
 │ │ │ │ ├── lwcForm.js-meta.xml
 │ │ │ │ └── lwcForm.css
 │ │ │ └── ...
+
+🧠** Learnings**
+How to pass structured data between frontend and backend.
+Importance of JSON.deserializeStrict() for safe data handling.
+How Wrapper Classes simplify multi-object operations.
+How to debug LWC ↔️ Apex data flow.
+
+👩‍💻 **Author**
+Yasmin Saleem
+Salesforce Developer | LWC Enthusiast | AgentForce Champion
+
+⭐ **Contribution**
+Feel free to fork this repo, open issues, or submit PRs if you want to enhance this example further!
+
+🔗 Blog Reference
+👉 Read the full blog post: “How I Used Wrapper Classes and JSON to Create Related Records in Salesforce” (coming soon on SalesforceTrail.com
+)
