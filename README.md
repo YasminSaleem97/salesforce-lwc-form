@@ -23,4 +23,16 @@ The form collects Account, Contact, and Case details from the user, sends them t
 ---
 
 ## 🧱 Project Structure
-
+salesforce-lwc-form/
+├── force-app/
+│ ├── main/
+│ │ ├── default/
+│ │ │ ├── classes/
+│ │ │ │ └── AccountContactCaseController.cls
+│ │ │ ├── lwc/
+│ │ │ │ └── lwcForm/
+│ │ │ │ ├── lwcForm.html
+│ │ │ │ ├── lwcForm.js
+│ │ │ │ ├── lwcForm.js-meta.xml
+│ │ │ │ └── lwcForm.css
+│ │ │ └── ...
