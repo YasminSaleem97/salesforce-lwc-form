@@ -1,23 +1,26 @@
-<<<<<<< HEAD
-# Salesforce DX Project: Next Steps
+# Salesforce LWC Form — Create Account, Contact, and Case Records
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+This project demonstrates how to build a **Lightning Web Component (LWC)** form that creates related **Account, Contact, and Case** records in Salesforce using **Apex Wrapper Class** and **JSON Serialization/Deserialization**.
 
-## How Do You Plan to Deploy Your Changes?
+---
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+## 🧭 Overview
 
-## Configure Your Salesforce DX Project
+This project was part of my learning journey to deeply understand how **data flows between LWC (frontend)** and **Apex (backend)** in Salesforce.  
+The form collects Account, Contact, and Case details from the user, sends them to Apex as a **JSON string**, and then creates the related records — all in a single transaction.
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+---
 
-## Read All About It
+## 💡 Key Concepts Covered
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
-=======
-# salesforce-lwc-form
-A Lightning Web Component (LWC) form that creates related Account, Contact, and Case records using Apex and wrapper classes.
->>>>>>> 301029a96c10edcae6b4b24a95570f2d46837574
+- LWC to Apex communication using `@AuraEnabled`
+- Passing complex data as JSON string (`JSON.stringify()`)
+- Converting JSON string back to Apex object (`JSON.deserializeStrict()`)
+- Using **Wrapper Classes** to handle multiple sObjects together
+- Creating parent-child records (Account → Contact → Case)
+- Clean and reusable Apex logic
+
+---
+
+## 🧱 Project Structure
+
